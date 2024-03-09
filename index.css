@@ -1,0 +1,7 @@
+.jumbotron {
+    background-image: url("https://github.com/alacdev/alacdev/blob/main/Img/back.jpg?raw=true");
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir el área completa */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #fff; /* Cambia el color del texto para que sea legible sobre el fondo */
+    padding: 150px 0; /* Ajusta el relleno (padding) según sea necesario */
+  }
