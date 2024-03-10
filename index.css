@@ -1,11 +1,33 @@
-.jumbotron {
-    background-image: url("https://github.com/alacdev/alacdev/blob/main/Img/back.jpg?raw=true");
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir el área completa */
-    background-position: center; /* Centra la imagen de fondo */
-    color: #fff; /* Cambia el color del texto para que sea legible sobre el fondo */
-    padding: 150px 0; /* Ajusta el relleno (padding) según sea necesario */
-  }
+/* Fuentes */
+/* JetBrains */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-  #icon {
-    
-  }
+.jumbotron {
+  background-image: url("https://github.com/alacdev/alacdev/blob/main/Img/back.jpg?raw=true");
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir el área completa */
+  background-position: center; /* Centra la imagen de fondo */
+  color: #fff; /* Cambia el color del texto para que sea legible sobre el fondo */
+  padding: 150px 0; /* Ajusta el relleno (padding) según sea necesario */
+  font-family: "Jet Brains Mono", monospace;
+}
+
+header .navbar {
+  padding-left: 30px;
+}
+
+#logo {
+  padding-right: 30px;
+}
+
+#nav-link {
+  overflow: hidden; /* Ocultar cualquier parte de la imagen que se extienda más allá del contenedor */
+  transition: transform 10s ease-in-out; /* Efecto de transición suave */
+}
+
+a img:hover {
+  transform: scale(
+    1.5
+  ); /* Escalar la imagen al 110% del tamaño original al pasar el cursor sobre ella */
+}
