@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DWCC",
+		"editor.fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+		"editor.fontSize": 16,
+		"editor.fontLigatures": false,
+		"editor.codeActionsOnSave": {}
+	}
+}
