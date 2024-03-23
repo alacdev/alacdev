@@ -1,27 +1,49 @@
 /* Fuentes */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"); /* JetBrains */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Pacifico */
 
 
-
+/** General */
 ul {
   list-style-type: none;
+}
+
+*{
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+#sobremi,
+#proyectos,
+#contacto,
+#skills {
+  color: white;
+  font-size: 1.3em;
+}
+
+/** Títulos */
+
+.title {
+  align-items: left;
+  font-size: 100px;
+  font-family: ;
 }
 
 /** Fondo */
 html {
   height: 100%;
-  margin: 0; /* Ajustar el margen a 0 para evitar espacios en blanco */
-  background: linear-gradient(45deg, 
-    #000000 0%, 
-    #333333 25%, 
-    #666666 50%, 
-    #999999 75%, 
-    #CCCCCC 100%);
+  margin: 0;
+  background: linear-gradient(
+    45deg,
+    #000000 0%,
+    #333333 25%,
+    #666666 50%,
+    #999999 75%,
+    #cccccc 100%
+  );
   background-size: 400% 400%;
   height: auto;
   animation: gradientAnimation 40s ease-in-out infinite;
-  
 }
 
 @keyframes gradientAnimation {
@@ -48,11 +70,20 @@ header .navbar {
 }
 
 #logo {
-  padding-right: 30px;
+  width: 15%;
 }
+
+#logo img {
+  width: 100%;
+}
+
+
 
 /** RRSS */
 
+#rrss {
+  padding-right: 30px;
+}
 #linkedin:hover {
   filter: drop-shadow(0px 0px 10px rgba(0, 119, 181, 0.8));
 }
@@ -65,13 +96,17 @@ header .navbar {
   filter: drop-shadow(0px 0px 10px rgba(240, 240, 240, 0.8));
 }
 
+#correo:hover {
+  filter: drop-shadow(0px 0px 10px rgba(253, 81, 81, 0.8));
+}
+
 #instagram:hover {
   filter: drop-shadow(0px 0px 10px rgba(221, 42, 123, 0.8));
 }
 
 #nav-link {
   overflow: hidden; /* Ocultar cualquier parte de la imagen que se extienda más allá del contenedor */
-  transition: transform 10s ease-in-out; /* Efecto de transición suave */  
+  transition: transform 10s ease-in-out; /* Efecto de transición suave */
   color: white;
 }
 
@@ -82,33 +117,45 @@ a img:hover {
 }
 
 /** Nav */
-
-
+header {
+  margin-bottom: ;
+}
 
 /** Presentación */
+
+.hello {
+  font-family: "Pacifico";
+  width: 100%;
+  text-align: right;
+}
+
+.hello span {
+  font-family: "Pacifico";
+  color: aquamarine;
+}
 
 #presentacion {
   padding: 10% 0;
   color: white;
+  padding-top: 3%;
+  padding-bottom: 4%;
 }
 
 /** Sección sobre mi */
-#sobremi, #proyectos, #contacto{
-  color: white;
-  font-size: 1.3em;
-}
-
-#imgsobremi {
-  shape-outside: circle(20%);
-}
-
 .content {
   overflow: hidden; /* Esto es importante para que el texto fluya correctamente */
 }
 
+#me {
+  max-width: 400px;
+}
+
 /** Sección proyectos */
+#card-title {
+  color: #000000;
+}
 
-
+/** Sección skills */
 
 /** Footer */
 footer {

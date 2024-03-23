@@ -7,7 +7,7 @@
     <!-- Favicon -->
     <link
       rel="icon"
-      href="https://raw.githubusercontent.com/alacdev/alacdev/bfb4bbeab29e6bc36c7a89fb7df0e5e68a2d4fc1/Img/favicon.svg"
+      href="Img/favicon.svg"
     />
     <!-- Bootstrap CSS -->
     <link
@@ -24,21 +24,20 @@
   </head>
   <header>
     <div class="navbar navbar-expand-lg">
-      <div class="d-flex justify-content-left">
+      <div id="logo" class="d-flex justify-content-left">
         <img
-          src="https://raw.githubusercontent.com/alacdev/alacdev/658070b2b9565dc38e4832c00119538fef9bb877/Img/logo_blanco.svg"
-          width="155"
+          src="Img/logo_blanco.svg"
           alt="Logo alacdev"
         />
       </div>
-      <div id="logo" class="ms-auto">
+      <div id="rrss" class="ms-auto">
         <ul class="navbar mt-2">
           <li class="nav-item mx-2">
             <a
               class="nav-link"
               href="https://www.linkedin.com/in/hugo-al%C3%A9n-acu%C3%B1a-aaa7772a3/"
               ><img
-                src="Img/linkedin_blanco.svg"
+                src="Img/icons/linkedin_blanco.svg"
                 width="30"
                 alt="Logo GitHub"
                 id="linkedin"
@@ -47,7 +46,7 @@
           <li class="nav-item mx-2">
             <a class="nav-link" href="https://github.com/alacdev"
               ><img
-                src="Img/git_blanco.svg"
+                src="Img/icons/git_blanco.svg"
                 width="30"
                 alt="Logo GitHub"
                 id="github"
@@ -56,7 +55,7 @@
           <li class="nav-item mx-2">
             <a class="nav-link" href="https://www.instagram.com/aalacdev/"
               ><img
-                src="Img/insta_blanco.svg"
+                src="Img/icons/insta_blanco.svg"
                 width="30"
                 alt="Logo Instagram"
                 id="instagram"
@@ -65,7 +64,7 @@
           <li class="nav-item mx-2">
             <a class="nav-link" href="https://twitter.com/alacdev"
               ><img
-                src="Img/twitter_blanco.svg"
+                src="Img/icons/twitter_blanco.svg"
                 width="30"
                 alt="Logo Twitter"
                 id="twitter"
@@ -74,10 +73,10 @@
           <li class="nav-item mx-2">
             <a href="mailto:aalacdev@gmail.com"
               ><img
-                src="Img/gmail_blanco.svg"
+                src="Img/icons/correo_blanco.svg"
                 width="30"
-                alt="Logo Gmail"
-                id="gmail"
+                alt="Logo Correo"
+                id="correo"
             /></a>
           </li>
         </ul>
@@ -89,32 +88,32 @@
     <!-- Presentación -->
     <section class="jumbotron text-center" id="presentacion">
       <div class="container">
-        <h1 class="display-4">¡Hola, soy Hugo Alén!</h1>
+        <h1 class="hello display-4 pt-2 pb-4">¡Hola, soy <span>Hugo Alén</span>!</h1>
         <p class="lead">Desarrollador web y entusiasta de la tecnología.</p>
-        <a href="#proyectos" class="btn btn-primary btn-lg">Ver Proyectos</a>
+        <a href="#proyectos" class="btn btn-primary btn-lg mx-2">Ver Proyectos</a>
+        <a href="doc/cv.pdf" download="cv-Hugo-Alén.pdf" class="btn btn-secondary btn-lg mx-2">Descargar CV</a>
       </div>
     </section>
 
     <!-- Sección sobre mí -->
     <section id="sobremi" class="pb-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row">          
+          <!-- <div class="d-flex justify-content-center">
+            <img
+              src="Img/me.png"
+              alt="Sobre mí"
+              class="img-fluid rounded-circle"
+              id="me"
+            />
+          </div> -->
+          <div class="col-md-12 mt-5">
             <p>
               ¡Bienvenido a mi sitio web! Soy un desarrollador web apasionado
               por crear experiencias digitales increíbles. Con experiencia en
               tecnologías como HTML, CSS, JavaScript, y más, me esfuerzo por
               ofrecer soluciones creativas y funcionales.
             </p>
-          </div>
-          <div class="col-md-5">
-            <img
-              src="https://github.com/alacdev/alacdev/blob/main/Img/face.png?raw=true"
-              alt="Sobre mí"
-              class="img-fluid rounded-circle"
-              class="float-right"
-              id="imgsobremi"
-            />
           </div>
         </div>
       </div>
@@ -123,7 +122,7 @@
     <!-- Sección de proyectos -->
     <section id="proyectos" class="py-5">
       <div class="container">
-        <h2 class="text-center">Proyectos</h2>
+        <h2 class="title text-center">Proyectos</h2>
         <p class="text-center">
           Aquí puedes ver algunos de mis trabajos recientes.
         </p>
@@ -131,8 +130,8 @@
           <div class="col-md-4">
             <div class="card">
               <img
-                src="https://via.placeholder.com/400"
-                class="card-img-top"
+                src="Img/TothallyLearning.png"
+                class="card-img-top p-4"
                 alt="Proyecto 1"
               />
               <div class="card-body">
@@ -177,60 +176,54 @@
     <!-- Apartado de skills -->
     <section id="skills" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Habilidades</h2>
+        <h2 class="title text-center mb-4">Skills</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="skill-item">
-              <h3>Desarrollo Web</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 90%"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  90%
-                </div>
-              </div>
-            </div>
+          <div class="col-6 d-flex justify-content-center">
+            <ul class="list-unstyled d-inline-flex" id="lista-skills">
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/html5.svg" alt="Logo de HTML-5" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/css3.svg" alt="Logo de CSS-3" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/java.svg" alt="Logo de Java" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/js.svg" alt="Logo de JavaScript" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/php.svg" alt="Logo de PHP" height="100px">
+              </li>              
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/netbeans.svg" alt="Logo de NetBeans" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/visual-code.svg" alt="Logo de Visual Studio Code" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/linux.svg" alt="Logo de Linux" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/windows.svg" alt="Logo de Windows" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/illustrator.svg" alt="Logo de Adobe Illustrator" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/photoshop.svg" alt="Logo de Adobe PhotoShop" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/premiere.svg" alt="Logo de Adobe Premiere" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/indesign.svg" alt="Logo de Adobe Indesign" height="100px">
+              </li>
+              <li class="list-group-item d-inline mx-3">
+                <img src="Img/icons/after-effects.svg" alt="Logo de Adobe After Effects" height="100px">
+              </li>
+            </ul>            
           </div>
-          <div class="col-md-4">
-            <div class="skill-item">
-              <h3>Diseño UI/UX</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 85%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  85%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill-item">
-              <h3>Programación en Python</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  80%
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Agrega más habilidades según sea necesario -->
         </div>
       </div>
     </section>
@@ -238,7 +231,7 @@
     <!-- Contact Section -->
     <section id="contacto" class="py-5">
       <div class="container">
-        <h2 class="text-center">Contacto</h2>
+        <h2 class="title text-center">Contacto</h2>
         <p class="text-center">
           ¡Me encantaría saber de ti! Si tienes alguna pregunta o deseas
           colaborar en un proyecto, no dudes en ponerte en contacto.
