@@ -7,7 +7,7 @@
     <!-- Favicon -->
     <link
       rel="icon"
-      href="Img/favicon.svg"
+      href="https://raw.githubusercontent.com/alacdev/alacdev/1eafc0ffeda996fed2fffc4bd9ac51c9e646bd4e/Img/favicon.svg"
     />
     <!-- Bootstrap CSS -->
     <link
@@ -26,55 +26,55 @@
     <div class="navbar navbar-expand-lg">
       <div id="logo" class="d-flex justify-content-left">
         <img
-          src="Img/logo_blanco.svg"
+          src="https://raw.githubusercontent.com/alacdev/alacdev/1eafc0ffeda996fed2fffc4bd9ac51c9e646bd4e/Img/logo_blanco.svg"
           alt="Logo alacdev"
         />
       </div>
       <div id="rrss" class="ms-auto">
         <ul class="navbar mt-2">
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a
               class="nav-link"
               href="https://www.linkedin.com/in/hugo-al%C3%A9n-acu%C3%B1a-aaa7772a3/"
               ><img
                 src="Img/icons/linkedin_blanco.svg"
-                width="30"
+                class="icon"
                 alt="Logo GitHub"
                 id="linkedin"
             /></a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a class="nav-link" href="https://github.com/alacdev"
               ><img
                 src="Img/icons/git_blanco.svg"
-                width="30"
+                class="icon"
                 alt="Logo GitHub"
                 id="github"
             /></a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a class="nav-link" href="https://www.instagram.com/aalacdev/"
               ><img
                 src="Img/icons/insta_blanco.svg"
-                width="30"
+                class="icon"
                 alt="Logo Instagram"
                 id="instagram"
             /></a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a class="nav-link" href="https://twitter.com/alacdev"
               ><img
                 src="Img/icons/twitter_blanco.svg"
-                width="30"
+                class="icon"
                 alt="Logo Twitter"
                 id="twitter"
             /></a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a href="mailto:aalacdev@gmail.com"
               ><img
                 src="Img/icons/correo_blanco.svg"
-                width="30"
+                class="icon"
                 alt="Logo Correo"
                 id="correo"
             /></a>
@@ -88,17 +88,24 @@
     <!-- Presentación -->
     <section class="jumbotron text-center" id="presentacion">
       <div class="container">
-        <h1 class="hello display-4 pt-2 pb-4">¡Hola, soy <span>Hugo Alén</span>!</h1>
-        <p class="lead">Desarrollador web y entusiasta de la tecnología.</p>
-        <a href="#proyectos" class="btn btn-primary btn-lg mx-2">Ver Proyectos</a>
-        <a href="doc/cv.pdf" download="cv-Hugo-Alén.pdf" class="btn btn-secondary btn-lg mx-2">Descargar CV</a>
+        <h1 class="hello display-4 pt-2">
+          ¡Hola, soy <span>Hugo Alén</span>!
+        </h1>
+        <p id="subtitle">Desarrollador web y entusiasta de la tecnología.</p>
+        <a href="doc/cv.pdf" download="cv-Hugo-Alén.pdf">
+          <button id="boton-cv" class="button" data-text="Awesome">
+            <span class="actual-text">&nbsp;Descargar CV&nbsp;</span>
+            <span aria-hidden="true" class="hover-text"
+              >&nbsp;Descargar&nbsp;CV&nbsp;</span>
+          </button>
+        </a>
       </div>
     </section>
 
     <!-- Sección sobre mí -->
     <section id="sobremi" class="pb-5">
       <div class="container">
-        <div class="row">          
+        <div class="row">
           <!-- <div class="d-flex justify-content-center">
             <img
               src="Img/me.png"
@@ -122,8 +129,8 @@
     <!-- Sección de proyectos -->
     <section id="proyectos" class="py-5">
       <div class="container">
-        <h2 class="title text-center">Proyectos</h2>
-        <p class="text-center">
+        <h2 class="title">Proyectos.</h2>
+        <p class="text">
           Aquí puedes ver algunos de mis trabajos recientes.
         </p>
         <div class="row">
@@ -175,64 +182,58 @@
 
     <!-- Apartado de skills -->
     <section id="skills" class="py-5">
-      <div class="container">
-        <h2 class="title text-center mb-4">Skills</h2>
-        <div class="row">
-          <div class="col-6 d-flex justify-content-center">
-            <ul class="list-unstyled d-inline-flex" id="lista-skills">
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/html5.svg" alt="Logo de HTML-5" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/css3.svg" alt="Logo de CSS-3" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/java.svg" alt="Logo de Java" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/js.svg" alt="Logo de JavaScript" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/php.svg" alt="Logo de PHP" height="100px">
-              </li>              
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/netbeans.svg" alt="Logo de NetBeans" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/visual-code.svg" alt="Logo de Visual Studio Code" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/linux.svg" alt="Logo de Linux" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/windows.svg" alt="Logo de Windows" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/illustrator.svg" alt="Logo de Adobe Illustrator" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/photoshop.svg" alt="Logo de Adobe PhotoShop" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/premiere.svg" alt="Logo de Adobe Premiere" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/indesign.svg" alt="Logo de Adobe Indesign" height="100px">
-              </li>
-              <li class="list-group-item d-inline mx-3">
-                <img src="Img/icons/after-effects.svg" alt="Logo de Adobe After Effects" height="100px">
-              </li>
-            </ul>            
-          </div>
-        </div>
+      <h2 class="title mb-4">Skills.</h2>
+      <div class="skill-logos">
+        <img src="Img/icons/html5.svg" alt="Logo de HTML-5" height="100px" />
+        <img src="Img/icons/css3.svg" alt="Logo de CSS-3" height="100px" />
+        <img src="Img/icons/java.svg" alt="Logo de Java" height="100px" />
+        <img src="Img/icons/js.svg" alt="Logo de JavaScript" height="100px" />
+        <img src="Img/icons/php.svg" alt="Logo de PHP" height="100px" />
+        <img
+          src="Img/icons/netbeans.svg"
+          alt="Logo de NetBeans"
+          height="100px"
+        />
+        <img
+          src="Img/icons/visual-code.svg"
+          alt="Logo de Visual Studio Code"
+          height="100px"
+        />
+        <img src="Img/icons/linux.svg" alt="Logo de Linux" height="100px" />
+        <img src="Img/icons/windows.svg" alt="Logo de Windows" height="100px" />
+        <img
+          src="Img/icons/illustrator.svg"
+          alt="Logo de Adobe Illustrator"
+          height="100px"
+        />
+        <img
+          src="Img/icons/photoshop.svg"
+          alt="Logo de Adobe PhotoShop"
+          height="100px"
+        />
+        <img
+          src="Img/icons/premiere.svg"
+          alt="Logo de Adobe Premiere"
+          height="100px"
+        />
+        <img
+          src="Img/icons/indesign.svg"
+          alt="Logo de Adobe Indesign"
+          height="100px"
+        />
+        <img
+          src="Img/icons/after-effects.svg"
+          alt="Logo de Adobe After Effects"
+          height="100px"
+        />
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contacto" class="py-5">
       <div class="container">
-        <h2 class="title text-center">Contacto</h2>
-        <p class="text-center">
+        <h2 class="title">Contacto.</h2>
+        <p class="text">
           ¡Me encantaría saber de ti! Si tienes alguna pregunta o deseas
           colaborar en un proyecto, no dudes en ponerte en contacto.
         </p>
@@ -274,7 +275,7 @@
 
     <!-- Footer -->
     <footer class="text-white text-center py-3">
-      <div class="container">        
+      <div class="container">
         <p class="mt-3">&copy; 2024 Alacdev</p>
       </div>
     </footer>

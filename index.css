@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"); /* JetBrains */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Truculenta:opsz,wght@12..72,100..900&display=swap'); /* Truculenta */
 
+:root {
+  --color-base:rgb(165, 95, 220);
+  --fuente-base:"Poppins";
+}
 
 /** General */
 ul {
@@ -10,7 +16,7 @@ ul {
 }
 
 *{
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--fuente-base);
 }
 
 #sobremi,
@@ -25,25 +31,34 @@ ul {
 
 .title {
   align-items: left;
-  font-size: 100px;
-  font-family: ;
+  font-size: 5vw;
+  font-weight: bold;
+  color: white;
 }
 
 /** Fondo */
 html {
-  height: 100%;
+  /* height: 100%;
   margin: 0;
   background: linear-gradient(
     45deg,
     #000000 0%,
-    #333333 25%,
-    #666666 50%,
-    #999999 75%,
-    #cccccc 100%
+    #171717 25%,
+    #1b1b1b 50%,
+    #202020 75%,
+    #333333 100%
   );
   background-size: 400% 400%;
   height: auto;
-  animation: gradientAnimation 40s ease-in-out infinite;
+  animation: gradientAnimation 40s ease-in-out infinite; */
+
+  /* Fondo morado */
+  margin: 0;
+  padding: 0;
+  background-image: url('Img/fondo.png'); /* URL de tu imagen de fondo */
+  background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+  background-position: top; /* Fija la posición de la imagen en la parte superior */
+  
 }
 
 @keyframes gradientAnimation {
@@ -84,6 +99,17 @@ header .navbar {
 #rrss {
   padding-right: 30px;
 }
+
+.icon {
+  width: 2.5vw; /* Cambia esto para ajustar el ancho */
+  height: auto; /* Esto mantendrá la relación de aspecto */
+  margin-left: 1vw;
+}
+
+.navlink img {
+  width: auto;
+}
+
 #linkedin:hover {
   filter: drop-shadow(0px 0px 10px rgba(0, 119, 181, 0.8));
 }
@@ -117,28 +143,75 @@ a img:hover {
 }
 
 /** Nav */
-header {
-  margin-bottom: ;
-}
 
 /** Presentación */
 
 .hello {
-  font-family: "Pacifico";
-  width: 100%;
-  text-align: right;
+  font-weight: bold;
+  font-size: 6vw;  
+  text-align: left;
 }
 
 .hello span {
-  font-family: "Pacifico";
-  color: aquamarine;
+  color: var(--color-base);
 }
+
+#subtitle {
+  font-size: 2vw;
+  text-align: left;
+  padding-bottom:1%;
+}
+
+#boton-cv {
+  font-size: 2vw;  
+}
+
 
 #presentacion {
   padding: 10% 0;
   color: white;
   padding-top: 3%;
   padding-bottom: 4%;
+}
+
+/* estilos de los botones */
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: var(--color-base);
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* texto al hacer hover */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
 /** Sección sobre mi */
@@ -156,6 +229,8 @@ header {
 }
 
 /** Sección skills */
+
+
 
 /** Footer */
 footer {
