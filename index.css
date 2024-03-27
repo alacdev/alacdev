@@ -114,7 +114,7 @@ header .navbar {
   margin-left: 1vw;
 }
 
-.navlink img {
+#rrss .navlink img {
   width: auto;
 }
 
@@ -138,7 +138,7 @@ header .navbar {
   filter: drop-shadow(0px 0px 10px rgba(221, 42, 123, 0.8));
 }
 
-#nav-link {
+#rrss #nav-link {
   overflow: hidden; /* Ocultar cualquier parte de la imagen que se extienda más allá del contenedor */
   transition: transform 10s ease-in-out; /* Efecto de transición suave */
   color: white;
@@ -152,10 +152,20 @@ a img:hover {
 
 /** Nav */
 
-#nav .navbar {
-  font-size: 2vw;
-  text-align: center;
+.sidebar {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 100;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
+
+.sidebar .nav-link {
+  font-family: var(--fuente-base);
+  font-weight: bold;
+  color: var(--color-base);
+}
+
 
 /** Presentación */
 
@@ -237,9 +247,16 @@ a img:hover {
 }
 
 /** Sección proyectos */
-#card-title {
-  color: #000000;
+
+.card {
+  border: 2px solid var(--color-base);
+  background-color: transparent;
 }
+
+.card-title {
+  color: var(--color-base);
+}
+
 
 /** Sección skills */
 .skill-logos {

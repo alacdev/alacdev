@@ -22,6 +22,27 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css" />
   </head>
+
+  <!-- Barra lateral -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-sticky">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#presentacion">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>  
+
   <header>
     <div class="navbar navbar-expand-lg">
       <div id="logo" class="d-flex justify-content-left">
@@ -84,7 +105,8 @@
     </div>
   </header>
 
-  <body>
+  <body>    
+
     <!-- Presentación -->
     <section id="presentacion" class="text-center">
       <div class="container">
@@ -118,62 +140,6 @@
       </div>
     </section>
 
-    <!-- Nav -->
-    <section id="nav" class="pb-5">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid d-flex justify-content-center">
-          <ul class="navbar-nav text-center">
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          var navbar = $("#nav");
-          if ($(this).scrollTop() > navbar.height()) {
-            navbar.addClass("fixed-top");
-          } else {
-            navbar.removeClass("fixed-top");
-          }
-        });
-      });
-    </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var sections = document.querySelectorAll("section");
-
-    window.addEventListener("scroll", function() {
-      var scrollPosition = window.scrollY;
-
-      sections.forEach(function(section) {
-        var sectionTop = section.offsetTop;
-        var sectionHeight = section.clientHeight;
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < sectionTop + sectionHeight
-        ) {
-          // El usuario está en esta sección
-          console.log("El usuario está en la sección:", section.id);
-        }
-      });
-    });
-  });
-</script>
-
-
     <!-- Sección de proyectos -->
     <section id="proyectos" class="py-5">
       <div class="container">
@@ -182,14 +148,13 @@
           <div class="col-md-4">
             <div class="card">
               <img
-                src="Img/TothallyLearning.png"
-                class="card-img-top p-4"
+                src="https://via.placeholder.com/400"
+                class="card-img-top"
                 alt="Proyecto 1"
               />
               <div class="card-body">
                 <h5 class="card-title">Proyecto 1</h5>
                 <p class="card-text">Breve descripción del proyecto.</p>
-                <a href="#" class="btn btn-primary">Ver Detalles</a>
               </div>
             </div>
           </div>
@@ -203,7 +168,6 @@
               <div class="card-body">
                 <h5 class="card-title">Proyecto 2</h5>
                 <p class="card-text">Breve descripción del proyecto.</p>
-                <a href="#" class="btn btn-primary">Ver Detalles</a>
               </div>
             </div>
           </div>
@@ -217,7 +181,6 @@
               <div class="card-body">
                 <h5 class="card-title">Proyecto 3</h5>
                 <p class="card-text">Breve descripción del proyecto.</p>
-                <a href="#" class="btn btn-primary">Ver Detalles</a>
               </div>
             </div>
           </div>
@@ -319,11 +282,7 @@
     <!-- Contact Section -->
     <section id="contacto" class="py-5">
       <div class="container">
-        <h2 class="title">Contacto.</h2>
-        <p class="text">
-          ¡Me encantaría saber de ti! Si tienes alguna pregunta o deseas
-          colaborar en un proyecto, no dudes en ponerte en contacto.
-        </p>
+        <h2 class="title pb-4">Contacto.</h2>
         <div class="row">
           <div class="col-md-6 mx-auto">
             <form action="#" method="post">
