@@ -10,6 +10,36 @@
   --fuente-base:"Poppins";
 }
 
+/* Animaciones al cargar la página */
+
+/* Presentación */
+#presentacion {
+	animation: presentacion 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes presentacion {
+  0% {
+    transform: translateY(+300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Resto */
+.navbar, .sidebar, #sobremi, #proyectos {
+	animation: inicio 2s ;
+}
+
+@keyframes inicio {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 
 body, html {
   margin: 0;
