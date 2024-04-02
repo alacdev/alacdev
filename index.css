@@ -169,8 +169,8 @@ header .navbar {
 }
 
 #rrss #nav-link {
-  overflow: hidden; /* Ocultar cualquier parte de la imagen que se extienda más allá del contenedor */
-  transition: transform 10s ease-in-out; /* Efecto de transición suave */
+  overflow: hidden;
+  transition: transform 10s ease-in-out; 
   color: white;
 }
 
@@ -294,7 +294,7 @@ a img:hover {
 }
 
 .skill-item img {
-  margin: 1vw;
+  margin: 0.8vw;
   width: 8vw;
   height: auto;
 }
@@ -375,9 +375,11 @@ footer {
 
   .title {
     align-items: left;
-    font-size: 5vw;
+    font-size: 8vw;
     font-weight: bold;
     color: white;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   body {
@@ -391,6 +393,7 @@ footer {
   }
 
   header .navbar {
+    width: 100%;
     margin-top:5%;
     padding: 0;
   }
@@ -398,7 +401,7 @@ footer {
   /** Logo */
   
   #logo {
-    width: 80%;
+    width: 30%;
   }
 
   #logo img {
@@ -412,13 +415,25 @@ footer {
   }
 
   .icon {
-    width: 2.5vw;
+    width: 5vw;
     height: auto;
-    margin-left: 1vw;
+    margin-left: 2vw;
   }
 
   #rrss .navlink img {
     width: auto;
+  }
+
+  #linkedin:hover,#github:hover,#twitter:hover,#correo:hover,#instagram:hover {
+    filter: none;
+  }
+  
+  #rrss #nav-link {
+    display: none;
+  }
+
+  a img:hover {
+    transform: none; 
   }
   
 
@@ -496,8 +511,8 @@ footer {
   }
 
   .skill-item img {
-    margin: 1vw;
-    width: 8vw;
+    margin: 4vw;
+    width: 20vw;
     height: auto;
   }
 
