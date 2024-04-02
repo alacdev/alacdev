@@ -388,6 +388,7 @@ footer {
 
 
   header{
+    margin: 0 3% 0 ;
     display: grid;
     place-items: center;
   }
@@ -447,7 +448,7 @@ footer {
 
   .hello {
     font-weight: bold;
-    font-size: 8vw;
+    font-size: 8.3vw;
     text-align: left;
   }
 
@@ -495,7 +496,7 @@ footer {
   .card {
     border: 2px solid var(--color-base);
     background-color: transparent;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
   }
 
   .card-title {
