@@ -463,7 +463,8 @@ footer {
   }
 
   #boton-cv {
-    font-size: 3vw;
+    font-size: 5vw;
+    color: var(--color-base);
   }
 
   #presentacion {
