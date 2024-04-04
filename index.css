@@ -414,6 +414,7 @@ footer {
   /* Botón contacto */
 
   .Btn {
+    position: fixed;
     bottom: 2%;
     right: 5%;
   }
