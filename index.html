@@ -36,9 +36,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
       </ul>
     </div>
   </div>
@@ -289,60 +286,17 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="py-5">
-      <div class="container">
-        <h2 class="title pb-4">Contacto.</h2>
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <form action="enviar_form.php" method="POST">
-              <div class="form-group mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nombre"
-                  id="nombre"
-                  name="nombre"
-                  required
-                />
-              </div>
-              <div class="form-group mb-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email"
-                  id="email"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="form-group mb-4">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  placeholder="Mensaje"
-                  id="mensaje"
-                  name="mensaje"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                Enviar Mensaje
-              </button>
-            </form>
-          </div>
+    <button class="Btn">
+      <a href="mailto:aalacdev@gmail.com">
+        <div class="sign">
+          <img
+            src="Img/icons/correo_blanco.svg"
+            alt="Logo de correo electrónico visible en toda la página"
+          />
+          <div class="text">Contactar</div>
         </div>
-      </div>      
-    </section>
-<!-- 
-    <?php if (isset($_SESSION["mensaje"])): ?>
-      <script>
-        alert('<?php echo $_SESSION["mensaje"]; ?>');
-      </script>
-      <?php
-    unset($_SESSION["mensaje"]); // Limpiar el mensaje de la sesión
-endif; ?> 
--->
+      </a>
+    </button>
 
     <!-- Footer -->
     <footer class="text-white text-center py-3">

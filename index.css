@@ -303,6 +303,11 @@ a img:hover {
   scale: 1.2;
   transition: 0.5s ease;
   z-index: 5;
+  filter: grayscale(0%);
+}
+
+.skill-logos:hover .skill-item:not(:hover) {
+  filter: grayscale(100%);
 }
 
 .etiqueta {
@@ -326,6 +331,76 @@ a img:hover {
 .skill-item:hover .etiqueta {
   opacity: 1;
 }
+
+/* Contact button */
+.Btn {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  transition-duration: .3s;
+  background-color: var(--color-base);
+}
+
+.Btn a {
+  text-decoration: none;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign img {
+  margin-right: 2%;
+}
+
+/* text */
+.text {
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 140px;
+  border-radius: 40px;
+  transition-duration: .3s;
+  text-align: center;
+}
+
+.Btn img {
+  width: 80%;
+}
+
+.Btn:hover img {
+  display: none;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
 
 /* Footer */
 footer {
