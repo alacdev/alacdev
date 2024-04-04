@@ -30,7 +30,9 @@
 .navbar,
 .sidebar,
 #sobremi,
-#proyectos, #skills, #contacto {
+#proyectos,
+#skills,
+#contacto {
   animation: inicio 2s;
 }
 
@@ -170,7 +172,7 @@ header .navbar {
 
 #rrss #nav-link {
   overflow: hidden;
-  transition: transform 10s ease-in-out; 
+  transition: transform 10s ease-in-out;
   color: white;
 }
 
@@ -343,7 +345,7 @@ a img:hover {
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   background-color: var(--color-base);
 }
 
@@ -354,7 +356,7 @@ a img:hover {
 
 .sign {
   width: 100%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,14 +370,14 @@ a img:hover {
   color: white;
   font-size: 1.2em;
   font-weight: 600;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 /* Hace que se haga más grande */
 .Btn:hover {
   width: 140px;
   border-radius: 40px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   text-align: center;
 }
 
@@ -390,14 +392,13 @@ a img:hover {
 .Btn:hover .text {
   opacity: 1;
   width: 80%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 /* Animación cuando se hace click */
 .Btn:active {
-  transform: translate(2px ,2px);
+  transform: translate(2px, 2px);
 }
-
 
 /* Footer */
 footer {
@@ -409,6 +410,13 @@ footer {
 
 @media only screen and (max-width: 1023px) {
   /* Animaciones al cargar la página */
+
+  /* Botón contacto */
+
+  .Btn {
+    bottom: 2%;
+    right: 7%;
+  }
 
   /* Presentación */
   #presentacion {
@@ -441,8 +449,6 @@ footer {
     }
   }
 
-
-
   /** Títulos */
 
   .title {
@@ -458,21 +464,20 @@ footer {
     margin: 0;
   }
 
-
-  header{
-    margin: 0 3% 0 ;
+  header {
+    margin: 0 3% 0;
     display: grid;
     place-items: center;
   }
 
   header .navbar {
     width: 100%;
-    margin-top:5%;
+    margin-top: 5%;
     padding: 0;
   }
 
   /** Logo */
-  
+
   #logo {
     width: 30%;
   }
@@ -497,18 +502,21 @@ footer {
     width: auto;
   }
 
-  #linkedin:hover,#github:hover,#twitter:hover,#correo:hover,#instagram:hover {
+  #linkedin:hover,
+  #github:hover,
+  #twitter:hover,
+  #correo:hover,
+  #instagram:hover {
     filter: none;
   }
-  
+
   #rrss #nav-link {
     display: none;
   }
 
   a img:hover {
-    transform: none; 
+    transform: none;
   }
-  
 
   /** Nav */
 
