@@ -332,13 +332,14 @@ html[scheme="light-mode"] #correo {
 }
 
 /* Al hacer hover en una skill el resto se quedan en B&N */
-/* .skill-item:hover {
+ .skill-item:hover {
   scale: 1.2;
   transition: 0.5s ease;
   z-index: 5;
   filter: grayscale(0%);
 }
 
+/*
 .skill-logos:hover .skill-item:not(:hover) {
   filter: grayscale(100%);
 } */
