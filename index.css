@@ -181,23 +181,23 @@ html[scheme="light-mode"] #correo {
   content: url(Img/icons/correo_dark.svg) !important;
 }
 
-#linkedin:hover {
+.nav-link #linkedin:hover {
   filter: drop-shadow(0px 0px 10px rgba(0, 119, 181, 0.8));
 }
 
-#github:hover {
+.nav-link #github:hover {
   filter: drop-shadow(0px 0px 10px rgba(240, 240, 240, 0.8));
 }
 
-#twitter:hover {
+.nav-link #twitter:hover {
   filter: drop-shadow(0px 0px 10px rgba(240, 240, 240, 0.8));
 }
 
-#correo:hover {
+.nav-link #correo:hover {
   filter: drop-shadow(0px 0px 10px rgba(253, 81, 81, 0.8));
 }
 
-#instagram:hover {
+.nav-link #instagram:hover {
   filter: drop-shadow(0px 0px 10px rgba(221, 42, 123, 0.8));
 }
 
@@ -326,7 +326,7 @@ html[scheme="light-mode"] #correo {
 }
 
 .skill-item img {
-  margin: 0.8vw;
+  margin: 1.2vw;
   width: 8vw;
   height: auto;
 }
