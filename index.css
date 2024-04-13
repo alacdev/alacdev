@@ -331,7 +331,8 @@ html[scheme="light-mode"] #correo {
   height: auto;
 }
 
-.skill-item:hover {
+/* Al hacer hover en una skill el resto se quedan en B&N */
+/* .skill-item:hover {
   scale: 1.2;
   transition: 0.5s ease;
   z-index: 5;
@@ -340,7 +341,7 @@ html[scheme="light-mode"] #correo {
 
 .skill-logos:hover .skill-item:not(:hover) {
   filter: grayscale(100%);
-}
+} */
 
 .etiqueta {
   position: absolute;
