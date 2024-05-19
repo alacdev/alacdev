@@ -663,6 +663,11 @@ footer {
     display: none;
   }
 
+  .arrow-container {
+    display: none;
+    visibility: hidden;
+  }
+
   /** Sección sobre mi */
   .content {
     overflow: hidden;
