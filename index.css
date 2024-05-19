@@ -679,6 +679,10 @@ footer {
     text-align: center;
   }
 
+  #sobremi .container {
+    height: 50vh;
+  }
+
   /** Sección proyectos */
 
   .card {
