@@ -368,6 +368,11 @@ html[scheme="light-mode"] #correo {
   transition: scale 0.3s ease-in-out;
 }
 
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card:hover {
   scale: 110%;
   z-index: 99;
